@@ -10,8 +10,8 @@ Overview:
 ## Usage
 Pressure can be obtained by reading `/dev/barometerX` (where X is the device number), the read value is pressure in hPa. The file descriptor can be used with epoll/poll/select interfaces.
 <br>
-The last pressure readout from the device is considered valid for 500 ms. Following reads within this timespan will return the cached value. This timespan can be changed by writing new value to `/sys/class/lps25hb/barometerX/data_stale_time_ms`. Current value can be obtained by reading this file.
-<br>
+The last pressure readout from the device is considered valid for 500 ms. Following reads within this timespan will return the cached value. <br>This timespan can be changed by writing new value to `/sys/class/lps25hb/barometerX/data_stale_time_ms`. Current value can be obtained by reading this file.
+<br><br>
 ![LPS25HB connected to RPi 3A+](img/rpi.jpg)
 
 ## Building the driver
