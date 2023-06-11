@@ -1,0 +1,7 @@
+&i2c2 {
+    customlps25hb: customlps25hb@5d {
+        compatible = "mr,customlps25hb";
+        reg = <0x5d>;
+        status = "okay";
+    };
+};
